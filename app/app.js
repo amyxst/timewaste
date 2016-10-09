@@ -1,5 +1,5 @@
 (function() {
-	angular.module('TimeWaste', ['ui.router'])
+	angular.module('TimeWaste', ['ui.router', 'ngFileUpload'])
 		.config(function($stateProvider) {
 
 			$stateProvider
