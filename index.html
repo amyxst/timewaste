@@ -17,7 +17,11 @@
 			<input type="password" ng-model="login.password" />
 			<button ng-click="logUserIn()">Login</button> <a ui-sref="signUp">Create an Account</a>
 		</div>
-		<div ng-show="loggedIn"><a ui-sref="editProfile">Edit Profile</a></div>
+		<div ng-show="loggedIn">
+			<a ui-sref="editProfile">Edit Profile</a>
+			<a ng-click="logOut()">Logout</a>
+		</div>
+
 	</div>
 </nav>
 
@@ -31,6 +35,7 @@
 <script src="app/signup/signup-controller.js"></script>
 <script src="app/navigation/navigation-controller.js"></script>
 <script src="app/profile/edit-profile-controller.js"></script>
+<script src="app/main/main-controller.js"></script>
 
 <script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
 <script src="node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>

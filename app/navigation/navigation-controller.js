@@ -16,5 +16,10 @@
 					console.log(err)
 				})
 			}
+
+			$scope.logOut = function() {
+				localStorage.clear()
+				$scope.loggedIn = false
+			}
 		}])
 }())
